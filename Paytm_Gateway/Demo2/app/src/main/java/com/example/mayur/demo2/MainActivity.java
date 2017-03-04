@@ -1,5 +1,6 @@
 package com.example.mayur.demo2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -72,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
                                 // parameters.
                                 Log.d("LOG", "Payment Transaction is successful " + inResponse);
                                 Toast.makeText(getApplicationContext(), "Payment Transaction is successful ", Toast.LENGTH_LONG).show();
+                                Intent intent=new Intent(MainActivity.this,Main2Activity.class);
+                                startActivity(intent);
                             }
 
                             @Override
